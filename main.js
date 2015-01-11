@@ -1,84 +1,51 @@
-var projects = document.querySelector("#projects");
-var project1 = document.querySelector("#project1");
-var project2 = document.querySelector("#project2");
-var project3 = document.querySelector("#project3");
-var project4 = document.querySelector("#project4");
+var project = document.querySelectorAll(".project");
 var proj_cont = document.querySelector("#proj_cont");
-var project = [project1, project2, project3, project4];
+proj_cont.style.marginLeft = "0%";
+var proj_width = 100 * project.length
+proj_cont.style.width = proj_width + "%" ;
 var mouse = false;
 var curr_x;
-var p_index;
 
-var counter = 0
-project.forEach(function(proj){
-	proj.style.left = (counter * window.innerWidth) + "px";
-	counter+=1
-});
-
-
-projects.addEventListener("mousedown", function(e){
+proj_cont.addEventListener("mousedown", function(e){
 	mouse = true;
-	curr_x = e.clientX;
+	curr_x = e.clientX / window.innerWidth * 100;
+	console.log(curr_x);
 });
 
-projects.addEventListener("mouseup", function(){
+proj_cont.addEventListener("mouseup", function(){
 	mouse = false;
 });
 
-projects.addEventListener("mousemove", function(e){
+
+proj_cont.addEventListener("mousemove", function(e){
 	if(mouse){
-		change = e.clientX - curr_x;
-		curr_x+=change;
-		var proj1_left = project1.style.left;
-		var proj1_str = proj1_left.replace("px","");
-		var barr = window.parseInt(proj1_str);
+		var abs_pos = e.clientX / window.innerWidth * 100;
+		var change = abs_pos - curr_x;
+		var abs_current = proj_cont.style.marginLeft.replace("%", "");
+		curr_x = e.clientX / window.innerWidth * 100;
+		var current = window.parseFloat(abs_current);
 		if (change < 0){
-			var proj4_left = project4.style.left;
-			var proj4_str = proj4_left.replace("px","");
-			var barr = window.parseInt(proj4_str);
-			if( (barr + change) <= 0 ){
-				change = -(barr);
-			}
-			// console.log(barr);
-			// console.log(change);
-			if (barr > 0){
+			if( (-current) < proj_width - 100){
+				if(current + change <= -(proj_width - 100)){
+					console.log("hello");
+					change = -(proj_width - 100) - current;
+				}
 				move(change);
-			}
-			// move(change);
-		}else if (change > 0){
-			var proj1_left = project1.style.left;
-			var proj1_str = proj1_left.replace("px","");
-			var barr = window.parseInt(proj1_str);
-			// console.log(barr + change);
-			if( (barr + change) >= 0 ){
-				change = -(barr);
-			}
-			// console.log(barr);
-			// console.log(change);
-			if (barr < 0){
+			}	
+		}else if(change > 0){
+			if(current < 0){
+				if(current + change >= 0){
+					change = -(current);
+				}
 				move(change);
 			}
 		}
-	};
+	}
 });
 
-// if(barr < 0){ //||
-			 // project1.style.left >= (window.innerWidth.width * project.length) )
-
-
 function move(change){
-
-	project.forEach(function(proj){
-		var percent= proj.style.left.replace("px","");
-		var left = window.parseInt(percent);
-		var newValue = left + change;
-		proj.style.left = newValue + "px";
-	});
+	var abs_current = proj_cont.style.marginLeft.replace("%", "");
+	var current = window.parseFloat(abs_current);
+	var new_pos = current + change;
+	proj_cont.style.marginLeft = new_pos + "%";
 };
-
-// function autoMove(curr_pos){
-// 	end_pos = 
-// 	for (var i = 0; i <  i++) {
-// 		curr_position
-// 	};
-// }
