@@ -4,23 +4,50 @@
 	<meta charset="UTF-8">
 	<title>Alex Deschamps</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="splash" class="panel">
 	</div>
 	<div id="intro" class="panel">
 	</div>
+	<div id="skills" class="panel">
+	</div>
 	<div id="projects" class="panel">
 		<div id="proj_cont">
-			<div id="project1" class="project"></div>
+			<div id="project_splash" class="project">
+				<h1> heyyyyyyyy </h1>
+			</div>
+			<div id="project1" class="project">
+				<h2>Square Game</h2>
+				<div id="wrapper">
+					<canvas id="the_canvas" width="400" height="400"></canvas>
+					<div id="skills">
+						<h3 class="body">Skills Needed: </h3>
+						<p>Canvas, Javascript</p>
+					</div>
+				</div>
+				<div id="desc">
+				<!-- <p class="body">Description: </p> -->
+				<p id="top" class="description"> This game was inspired by playing frogger when I was younger. The goal is to direct the red box to the yellow line using the arrow keys on the keyboard while avoiding the anything that is in blue. Holding down shift gives you a boost to your speed, but not forever. Run out out of boost and your out of luck.</p>
+				<p class="description">The Square Game was built purely in the HTML5 element canvas using JavaScript to code the logic. I used objects to represent each square (and rectangles in later levels) that had built in collision detection. This makes it very easy to expand the code to build and implement new levels. Currently, no one has reported to have beaten the entire game, which consists of 7 levels. </p>
+				</div>
+			</div>
 			<div id="project2" class="project"></div>
 			<div id="project3" class="project"></div>
 			<div id="project4" class="project"></div>
 		</div>
 	</div>
+	<div id="proj_links" class="panel">
+		<div class="p_links hex"></div>
+		<div class="p_links hex"></div>
+		<div class="p_links hex"></div>
+		<div class="p_links hex"></div>
+	</div>
 	<div id="contact" class="panel">
 	</div>
 	
+	<!--<script src="square_game.js"></script>-->
 	<script src="main.js"></script>
 </body>
 </html>

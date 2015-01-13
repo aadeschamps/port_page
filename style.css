@@ -27,51 +27,109 @@ time, mark, audio, video {
 	display: block;
 }
 #splash{
-	background-color: red;
+	background-color: #5E412F;
+	height: 60vh;
 }
 #intro{
-	background-color: blue;
+	background-color: #FCEBB6;
+}
+#skills{
+	background-color: #4E2931;
+	height: 80vh;
 }
 #projects{
-	/*background-color: purple;*/
+	background-color: #DC403B;
 	width: 100%;
+	height: 70vh;
 	overflow: hidden;
 	/*position: absolute;*/
 	/*display: flex;*/
 }
 #proj_cont{
-	height: 100%;
-	/*margin-left: -50%;*/
+	height: 80%;
 	width: 400%;
 	display: flex;
 	display: -webkit-flex;
-	display: flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
 }
 #contact{
-	background-color: orange;
+	background-color: #F0A830;
 }
 .project{
-	width: 25%;
+	width: 25%; 
 	height: 100%;
 	float: left;
-/*	display: inline-block;*/
-	/*position: absolute;*/
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: column;
+	align-items: center;
+}
+#proj_links{
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 20vh;
+	background-color: #DC403B;
+	/*bottom: 0;*/
+}
+.p_links{
+	/*height: 10vh;*/
+	/*width: 5%;*/
+	background-color: blue;
+	margin: 0 2% 0 2%;
+}
+#contact{
+	height: 60vh;
+}
+#project_splash{
+	/*background-color: black;*/
 }
 #project1{
-	/*left: 0%;*/
-	background-color: purple;
+	/*background-color: purple;*/
 }
 #project2{
-	/*left: 100%;*/
-	background-color: green;
+	/*background-color: green;*/
 }
 #project3{
-	/*left: 200%;*/
-	background-color: purple;
+	/*background-color: purple;*/
 }
 #project4{
-	/*left: 300%;*/
-	background-color: green;
+	/*/*background-color: green;*/
+}
+canvas{
+    margin: 2%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.hex:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 30px solid #6C6;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    position: absolute;
+    top: -29px;
+}
+
+.hex {
+    margin-top: 0px;
+    width: 140px;
+    height: 100px;
+    background-color: #6C6;
+    position: relative;
+}
+
+.hex:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid #6C6;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
 }
