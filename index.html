@@ -5,35 +5,65 @@
 	<title>Alex Deschamps</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Cantarell:400italic' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 	<div id="splash" class="panel">
+		<div class="flex-div">
+			<h1 class="name"> Alex Deschamps</h1>
+			<p class="description white">Full Stack Web Developer | Video Game Enthusiast | Intellectually Curious</p>
+		</div>
 	</div>
 	<div id="intro" class="panel">
+		<div class="flex-div">
+			<p class="description"> About me blah blah blah blah blah blah blah blah blah blah blah blah blah blah blahblah blah blah blah blah blah blah blah blah blah blah blahblah blah blah blah blah blah</p>
+		</div>
 	</div>
 	<div id="skills" class="panel">
+		<div class="flex-div">
+			<h1 class="titles"> Skills </h2>
+		</div>
 	</div>
 	<div id="projects" class="panel">
 		<div id="proj_cont">
 			<div id="project_splash" class="project">
-				<h1> heyyyyyyyy </h1>
+				<h1 class="titles"> Projects </h1>
+				<p class="description">(click and drag left)</p>
 			</div>
 			<div id="project1" class="project">
-				<h2>Square Game</h2>
-				<div id="wrapper">
-					<canvas id="the_canvas" width="400" height="400"></canvas>
-					<div id="skills">
-						<h3 class="body">Skills Needed: </h3>
-						<p>Canvas, Javascript</p>
+				<div class="in">
+					<h2 class="proj_titles">Square Game</h2>
+					<div id="wrapper">
+						<div class="proj_img">
+							<canvas id="the_canvas" width="400" height="400"></canvas>
+							<!-- <div>
+								<h3 class="body">Skills Needed: </h3>
+								<p>Canvas, Javascript</p>
+							</div> -->
+						</div>
+					</div>
+					<div id="desc">
+					<!-- <p class="body">Description: </p> -->
+					<p id="top" class="description"> I've always had a love for video games, so when experimenting with canvas it was my first idea. This game was built in canvas purely with Javascript.</p>
 					</div>
 				</div>
-				<div id="desc">
-				<!-- <p class="body">Description: </p> -->
-				<p id="top" class="description"> This game was inspired by playing frogger when I was younger. The goal is to direct the red box to the yellow line using the arrow keys on the keyboard while avoiding the anything that is in blue. Holding down shift gives you a boost to your speed, but not forever. Run out out of boost and your out of luck.</p>
-				<p class="description">The Square Game was built purely in the HTML5 element canvas using JavaScript to code the logic. I used objects to represent each square (and rectangles in later levels) that had built in collision detection. This makes it very easy to expand the code to build and implement new levels. Currently, no one has reported to have beaten the entire game, which consists of 7 levels. </p>
+			</div>
+			<div id="project2" class="project">
+				<div class="in">
+					<h2 class="proj_titles">Chat App</h2>
+					<!-- <div class="proj_img"> -->
+						<i class="fa fa-qq fa-5x"></i>
+						<!-- <img src="chat.png"> -->
+					<!-- </div> -->
+					<div id="desc">
+					<!-- <p class="body">Description: </p> -->
+					<p id="top" class="description"> 
+						The Chat App was the first real server I've ever written. Its written using Web Sockets, and implements JSON encoding. Messages coming in manipulate the DOM. I'm constantly updating this project to add more features.
+					</p>
+					</div>
 				</div>
 			</div>
-			<div id="project2" class="project"></div>
 			<div id="project3" class="project"></div>
 			<div id="project4" class="project"></div>
 		</div>
@@ -45,6 +75,11 @@
 		<div class="p_links hex"></div>
 	</div>
 	<div id="contact" class="panel">
+		<div class="flex-div">
+			<p class="description"><i class="fa fa-linkedin fa-2x"></i> Find me on <a href="www.linkedin.in/alexdeschamps">LinkedIn</a> </p>
+			<p class="description"> <i class="fa fa-github fa-2x"></i>Find all of my projects on <a href="www.github.com/aadeschamps">Github</a></p>
+			<p class="description"><i class="fa fa-envelope fa-2x"></i>Contact me via email: alexadeschamps@gmail.com</p>
+		</div>
 	</div>
 	
 	<!--<script src="square_game.js"></script>-->
