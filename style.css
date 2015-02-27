@@ -32,7 +32,7 @@ time, mark, audio, video {
 	height: 175px;
 }
 #intro-inside{
-	height: 800px;
+	padding: 100px 0;
 }
 
 .abs-div{
@@ -75,7 +75,7 @@ time, mark, audio, video {
 }
 #intro{
 	background-color: #FCEBB6;
-	height: 90vh;
+	/*height: 90vh;*/
 	min-height: 1000px;
 }
 #intro:after{
@@ -240,20 +240,10 @@ canvas{
 	-flex-direction: column;
 }
 .pic{
-	width: 50%;
+	width: 300px;
 	height: 30%;
 	margin: 10px;
 }
-/*.margin{
-	margin: auto;
-	display: flex;
-	display: flex;
-	display: -webkit-flex;
-	flex-direction: column;
-	-flex-direction: column;
-	align-items:center;
-	justify-content: center;
-}*/
 
 .hex:before {
     content: " ";
