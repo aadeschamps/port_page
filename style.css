@@ -30,18 +30,64 @@ time, mark, audio, video {
 #splash{
 	background-color: #5E412F;
 	height: 60vh;
+	min-height: 200px;
+}
+#splash:after{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	z-index: 1;
+	/*left: 50%;*/
+	content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -29px;
+    border-top: 30px solid #5E412F;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
 }
 #intro{
 	background-color: #FCEBB6;
+	height: 90vh;
+	min-height: 1000px;
+}
+#intro:after{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	z-index: 1;
+	/*left: 50%;*/
+	content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -29px;
+    border-top: 30px solid #FCEBB6;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
 }
 #skills{
 	background-color: #4E2931;
-	height: 80vh;
+	height: 100vh;
+	min-height:1200px;
+}
+#skills:after{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	z-index: 1;
+	/*left: 50%;*/
+	content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -29px;
+    border-top: 30px solid #4E2931;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
 }
 #projects{
 	background-color: #DC403B;
 	width: 100%;
-	height: 70vh;
+	height: 800px;
 	overflow: hidden;
 	/*position: absolute;*/
 	/*display: flex;*/
@@ -83,6 +129,11 @@ time, mark, audio, video {
 	text-align: center;
 	margin-top: 3%;
 }
+.about-me{
+	font-size: 150%;
+	text-align: center;
+	margin: 3%;
+}
 .white{
 	color: #FCEBB6;
 }
@@ -118,9 +169,23 @@ i{
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	height: 20vh;
+	height: 200px;
 	background-color: #DC403B;
 	/*bottom: 0;*/
+}
+#proj_links:after{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	z-index: 1;
+	left: 0%;
+	content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -29px;
+    border-top: 30px solid #DC403B;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
 }
 .p_links{
 	/*height: 10vh;*/
@@ -138,31 +203,55 @@ canvas{
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+.column{
+	height: 100%;
+	width: 60%;
+	max-width: 800px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-flex-direction: column;
+}
+.pic{
+	width: 50%;
+	height: 30%;
+	margin: 10px;
+}
+.margin{
+	margin: auto;
+	display: flex;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-flex-direction: column;
+	align-items:center;
+	justify-content: center;
+}
 
 .hex:before {
     content: " ";
     width: 0; height: 0;
     border-bottom: 30px solid #6C6;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 31px solid transparent;
     position: absolute;
     top: -29px;
 }
 
 .hex {
     margin-top: 0px;
-    width: 120px;
-    height: 80px;
+    width: 60px;
+    height: 20px;
     background-color: #6C6;
     position: relative;
 }
 
 .hex:after {
     content: "";
-    width: 2px;
+    width: 0px;
     position: absolute;
     bottom: -29px;
     border-top: 30px solid #6C6;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 31px solid transparent;
 }
