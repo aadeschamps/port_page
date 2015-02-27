@@ -22,7 +22,7 @@ time, mark, audio, video {
 }
 
 .container{
-	max-width: 1000px;
+	max-width: 800px;
 	margin: 0 auto;
 }
 .text-center{
@@ -30,6 +30,9 @@ time, mark, audio, video {
 }
 #header{
 	height: 175px;
+}
+#intro-inside{
+	height: 800px;
 }
 
 .abs-div{
@@ -241,7 +244,7 @@ canvas{
 	height: 30%;
 	margin: 10px;
 }
-.margin{
+/*.margin{
 	margin: auto;
 	display: flex;
 	display: flex;
@@ -250,7 +253,7 @@ canvas{
 	-flex-direction: column;
 	align-items:center;
 	justify-content: center;
-}
+}*/
 
 .hex:before {
     content: " ";
