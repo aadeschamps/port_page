@@ -59,7 +59,7 @@ body{
 
 .double{
 	/*height: 300px;*/
-	position:relative;
+	position: relative;
 	max-width: 800px;
 	margin: 0 auto;
 }
@@ -74,7 +74,7 @@ body{
 	display: block;
 }
 
-.panel:after{
+.add-bottom:after{
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
@@ -83,7 +83,7 @@ body{
 	content: "";
     width: 100%;
     position: absolute;
-    bottom: -29px;
+    bottom: -28px;
     border-top: 30px solid #FCEBB6;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
@@ -103,7 +103,13 @@ body{
 	color: #FCEBB6;
 }
 
-.hex:before {
+.hex{
+	border-radius: 100px;
+	height: 20px;
+	width: 20px;
+}
+
+/*.hex:before {
     content: " ";
     width: 0; height: 0;
     border-bottom: 30px solid #6C6;
@@ -129,7 +135,7 @@ body{
     border-top: 30px solid #6C6;
     border-left: 30px solid transparent;
     border-right: 31px solid transparent;
-}
+}*/
 
 
 /* Splash Specific CSS */
@@ -157,17 +163,17 @@ body{
 
 #intro{
 	background-color: #FCEBB6;
-	min-height: 1000px;
+	/*min-height: 1000px;*/
 }
 
 .about-me{
-	font-size: 150%;
+	font-size: 1.5em;
 	text-align: center;
 	margin: 3%;
 }
 
 .pic{
-	width: 300px;
+	width: 200px;
 	height: 30%;
 	margin: 10px;
 }
@@ -206,12 +212,6 @@ body{
 	-webkit-flex-direction: row;
 	flex-direction: row;
 }
-#contact{
-	background-color: #F0A830;
-}
-
-
-
 
 .in{
 	display: -webkit-flex;
@@ -263,28 +263,12 @@ i{
 	background-color: #DC403B;
 	/*bottom: 0;*/
 }
-#proj_links:after{
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;         /* Opera/IE 8+ */
-	z-index: 1;
-	left: 0%;
-	content: "";
-    width: 100%;
-    position: absolute;
-    bottom: -29px;
-    border-top: 30px solid #DC403B;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-}
+
 .p_links{
 	/*height: 10vh;*/
 	/*width: 5%;*/
 	background-color: blue;
 	margin: 0 2% 0 2%;
-}
-#contact{
-	height: 60vh;
 }
 
 canvas{
@@ -303,4 +287,24 @@ canvas{
 	-flex-direction: column;
 }
 
+/* Contact Specific Links */
+
+#contact{
+	background-color: #F0A830;
+	position: relative; 
+	min-height: 400px;
+}
+
+#bottom-links{
+	display: block;
+	position: absolute;
+	bottom: 3em;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#bottom-links .description{
+	margin: 0;
+}
 

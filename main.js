@@ -8,12 +8,9 @@ var mouse = false;
 var curr_x;
 curr_proj = 0;
 
-console.log(p_links);
-
 for (var i = 0; i < p_links.length; i++) {
 	(function () {
 		var pos = -(100 * i) + "%";
-		console.log(pos);
 		var target = p_links[i];
 		target.addEventListener("click", function(){
 			$("#proj_cont").animate({"margin-left": pos}, 500);
