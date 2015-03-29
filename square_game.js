@@ -29,16 +29,16 @@ var boost = 100;
 
 // movement of player box by pushing down keys
 var handleKeyDown = function(evt) {
-    if (evt.keyCode === 39) {
+    if (evt.keyCode === 68) {
         // Right arrow was pressed
         player.right = true;
-    } else if (evt.keyCode === 37) {
+    } else if (evt.keyCode === 65) {
         //Left arrow was pressed
         player.left = true;
-    } else if (evt.keyCode === 40) {
+    } else if (evt.keyCode === 83) {
         // down key pressed
         player.down = true;
-    } else if (evt.keyCode === 38) {
+    } else if (evt.keyCode === 87) {
         // up key pressed
         player.up = true;
     }else if (evt.keyCode === 16){
@@ -67,16 +67,16 @@ var handleKeyDown = function(evt) {
 }
 // shuts off movement when releasing keys
 var handleKeyUp = function(evt) {
-    if (evt.keyCode === 39) {
+    if (evt.keyCode === 68) {
         // Right arrow was unpressed
         player.right = false;
-    } else if (evt.keyCode === 37) {
+    } else if (evt.keyCode === 65) {
         //Left arrow was un-pressed
         player.left = false;
-    } else if (evt.keyCode === 40) {
+    } else if (evt.keyCode === 83) {
         // down key unpressed
         player.down = false;
-    } else if (evt.keyCode === 38) {
+    } else if (evt.keyCode === 87) {
         // up key unpressed
         player.up = false;
     }else if (evt.keyCode === 16){

@@ -175,9 +175,10 @@ body{
 }
 
 .pic{
-	width: 200px;
-	height: 30%;
-	margin: 10px;
+	border-radius: 10px;
+	width: 300px;
+	height: 50%;
+	margin: 10px auto;
 }
 
 /* Skills Specific CSS  */
@@ -208,16 +209,11 @@ body{
 #proj_cont{
 	height: 100%;
 	width: 400%;
-	display: flex;
-	display: -webkit-flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
 }
 
 .in{
 	width: 50%;
 	height: 100%;
-	padding: 5%;
 	margin: 0 auto;
 }
 
@@ -227,6 +223,8 @@ body{
 	width: 25%; 
 	height: 100%;
 	text-align: center;
+	display: inline-block;
+	float: left;
 }
 
 i{
@@ -238,8 +236,10 @@ i{
 	text-decoration: underline;
 }
 .proj_img{
-	height: 20%;
-	width: 20%;
+	/*height: 20%;
+	width: 20%;*/
+	margin: 2em;
+	border-radius: 5px;
 }
 .name{
 	font-size: 250%;
@@ -270,19 +270,10 @@ i{
 
 canvas{
     margin: 2% auto;
-    height: 80%;
+    height: 50%;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-/*.column{
-	height: 100%;
-	width: 60%;
-	max-width: 800px;
-	display: flex;
-	display: -webkit-flex;
-	flex-direction: column;
-	-flex-direction: column;
-}*/
 
 /* Contact Specific Links */
 
