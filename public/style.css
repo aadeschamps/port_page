@@ -105,11 +105,11 @@ body{
 }
 
 .highlight {
-	background-color: white;
+	background-color: #F0A830;
 }
 
 .unhigh {
-	background-color: blue;
+	background-color: #5E412F;
 }
 
 /*.hex:before {
@@ -279,6 +279,7 @@ canvas{
 
 #contact{
 	background-color: #F0A830;
+	/*background-color: #D57500;*/
 	position: relative; 
 	min-height: 400px;
 }
