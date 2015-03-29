@@ -6,22 +6,28 @@ var proj_width = 100 * project.length
 proj_cont.style.width = proj_width + "%" ;
 var mouse = false;
 var curr_x;
-curr_proj = 0;
+var curr_proj = 0;
+var high_index = 0;
+
 
 for (var i = 0; i < p_links.length; i++) {
-	(function () {
+	(function (i) {
 		var pos = -(100 * i) + "%";
 		var target = p_links[i];
 		target.addEventListener("click", function(){
 			$("#proj_cont").animate({"margin-left": pos}, 500);
+			changeHighlight(i);
+			console.log(curr_proj);
 		});
-	}())
+	}(i))
 };
+
+
+
 
 proj_cont.addEventListener("mousedown", function(e){
 	mouse = true;
 	curr_x = e.clientX / window.innerWidth * 100;
-	// console.log(curr_x);
 });
 
 proj_cont.addEventListener("mouseup", function(){
@@ -30,15 +36,18 @@ proj_cont.addEventListener("mouseup", function(){
 	if( current < -(curr_proj * 100) ){
 		if( current < -(curr_proj * 100 + 25) ){
 			curr_proj++;
+			
 		}
 		var new_pos = -(curr_proj * 100) + "%";
 		$("#proj_cont").animate({"margin-left": new_pos}, 200);	
+		changeHighlight(curr_proj)
 	}else{
 		if( current > -( (curr_proj - 1) * 100 + 75) ){
 			if(curr_proj > 0){curr_proj--;}
 		}
 		var new_pos = -(curr_proj * 100) + "%";
 		$("#proj_cont").animate({"margin-left": new_pos}, 200);
+		changeHighlight(curr_proj)
 	}
 });
 
@@ -74,4 +83,12 @@ function move(change){
 	var current = window.parseFloat(abs_current);
 	var new_pos = current + change;
 	proj_cont.style.marginLeft = new_pos + "%";
+};
+
+function changeHighlight(i){
+	p_links[high_index].classList.remove('highlight'); 
+	p_links[high_index].classList.add('unhigh');
+	p_links[i].classList.add('highlight');
+	p_links[i].classList.remove('unhigh');
+	high_index = i;	
 };

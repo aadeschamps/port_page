@@ -109,6 +109,14 @@ body{
 	width: 3em;
 }
 
+.highlight {
+	background-color: white;
+}
+
+.unhigh {
+	background-color: blue;
+}
+
 /*.hex:before {
     content: " ";
     width: 0; height: 0;
@@ -281,7 +289,7 @@ i{
 .p_links{
 	/*height: 10vh;*/
 	/*width: 5%;*/
-	background-color: blue;
+	/*background-color: blue;*/
 	margin: 0 2% 0 2%;
 }
 
