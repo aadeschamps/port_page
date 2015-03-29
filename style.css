@@ -49,16 +49,12 @@ body{
 	position: relative;
 }
 .abs-center{
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	position: absolute;
-	margin: auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .double{
-	/*height: 300px;*/
 	position: relative;
 	max-width: 800px;
 	margin: 0 auto;
@@ -79,7 +75,6 @@ body{
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 	z-index: 1;
-	/*left: 50%;*/
 	content: "";
     width: 100%;
     position: absolute;
@@ -171,7 +166,6 @@ body{
 
 #intro{
 	background-color: #FCEBB6;
-	/*min-height: 1000px;*/
 }
 
 .about-me{
@@ -190,7 +184,6 @@ body{
 
 #skills{
 	background-color: #4E2931;
-	/*min-height:1200px;*/
 }
 #skills:after{
     border-top: 30px solid #4E2931;
@@ -209,7 +202,7 @@ body{
 #projects{
 	background-color: #DC403B;
 	width: 100%;
-	height: 800px;
+	height: 750px;
 	overflow: hidden;
 }
 #proj_cont{
@@ -222,29 +215,20 @@ body{
 }
 
 .in{
-	display: -webkit-flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	width: 60%;
+	width: 50%;
 	height: 100%;
 	padding: 5%;
-
+	margin: 0 auto;
 }
-
 
 
 
 .project{
 	width: 25%; 
 	height: 100%;
-	float: left;
-	display: flex;
-	display: -webkit-flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
+	text-align: center;
 }
+
 i{
 	text-align: center;
 }
@@ -262,14 +246,8 @@ i{
 	color: #FCEBB6;
 }
 #proj_links{
-/*	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;*/
 	height: 200px;
 	background-color: #DC403B;
-	/*bottom: 0;*/
 }
 
 #proj_links:after{
@@ -287,19 +265,16 @@ i{
 }
 
 .p_links{
-	/*height: 10vh;*/
-	/*width: 5%;*/
-	/*background-color: blue;*/
 	margin: 0 2% 0 2%;
 }
 
 canvas{
-    margin: 2%;
+    margin: 2% auto;
     height: 80%;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-.column{
+/*.column{
 	height: 100%;
 	width: 60%;
 	max-width: 800px;
@@ -307,7 +282,7 @@ canvas{
 	display: -webkit-flex;
 	flex-direction: column;
 	-flex-direction: column;
-}
+}*/
 
 /* Contact Specific Links */
 

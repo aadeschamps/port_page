@@ -17,7 +17,6 @@ for (var i = 0; i < p_links.length; i++) {
 		target.addEventListener("click", function(){
 			$("#proj_cont").animate({"margin-left": pos}, 500);
 			changeHighlight(i);
-			console.log(curr_proj);
 		});
 	}(i))
 };
