@@ -52,6 +52,8 @@ body{
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
 }
 
 .double{
@@ -176,8 +178,8 @@ body{
 
 .pic{
 	border-radius: 10px;
-	width: 300px;
-	height: 50%;
+	width: 20em;
+	/*height: 200px;*/
 	margin: 10px auto;
 }
 
